@@ -1,0 +1,59 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid:
+    "controls video" 1fr
+    "results results" min-content
+    / min-content 1fr;
+  height: 100%;
+}
+
+body > div:nth-of-type(1) {
+    grid-area: controls;
+}
+
+.collapsed {
+  display: none;
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+label,
+input {
+  display: block;
+}
+
+label {
+  padding-top: 2ch;
+  text-align: center;
+}
+
+/* ──────────────────────────────────────────────────────────────────────────────── */
+
+body > div:nth-of-type(2) {
+    grid-area: video;
+  width: 100%;
+  height: 100%;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+/* ──────────────────────────────────────────────────────────────────────────────── */
+
+body > div:nth-of-type(3) {
+    grid-area: results
+}

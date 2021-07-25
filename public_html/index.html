@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css">
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/index.js" type="module"></script>
+  </head>
+  <body>
+    <div>
+      <button id="upload-video">Upload a video</button>
+      <form class="collapsed" id="video-add-form">
+        <label for="title">Title</label>
+        <input type="text" name="title" id="title">
+        <label for="setting">Setting</label>
+        <input type="text" name="setting" id="setting">
+        <label for="genre">Genre</label>
+        <input type="text" name="genre" id="genre">
+        <label for="artist">Artist</label>
+        <input type="text" name="artist" id="artist">
+        <label for="movement">Movement</label>
+        <input type="text" name="movement" id="movement">
+        <label for="duration">Duration</label>
+        <input type="number" name="duration" id="duration">
+        <label for="file">File</label>
+        <input type="file" name="audioFile" id="audioFile">
+        <label for="year">Year</label>
+        <input type="text" name="year" id="year">
+        <label for="category">Category</label>
+        <input type="text" name="category" id="category">
+        <label for="production">Production</label>
+        <input type="text" name="production" id="production">
+        <label for="creator">Credits</label>
+        <input type="text" name="credits" id="credits">
+        <label for="creator">Creator</label>
+        <input type="text" name="creator" id="creator">
+        <label for="contentWarning">Content Warning</label>
+        <input type="text" name="contentWarning" id="contentWarning">
+        <label for="contributors">Contributors</label>
+        <input type="text" name="contributors" id="contributors">
+      </form>
+      <button type="submit" class="collapsed" id="post-video">Submit</button>
+      <button id="search-video-btn">Search Videos</button>
+      <form class="collapsed">
+        <h5>Search Parameters</h5>
+        <label for="title">Title</label>
+        <input type="text" name="tags" id="tags">
+        <label for="setting">Setting</label>
+        <input type="text" name="setting" id="setting">
+        <label for="genre">Genre</label>
+        <input type="text" name="genre" id="genre">
+        <label for="artist">Artist</label>
+        <input type="text" name="artist" id="artist">
+        <label for="movement">Movement</label>
+        <input type="text" name="movement" id="movement">
+
+        <h5>Time Range</h5>
+        <input type="range" name="timeMin" id="timeMin">
+        <input type="range" name="timeMax" id="timeMAx">
+        <label for="year">Year</label>
+        <input type="text" name="year" id="year">
+        <label for="category">Category</label>
+        <input type="text" name="category" id="category">
+        <label for="production">Production</label>
+        <input type="text" name="production" id="production">
+        <label for="creator">Credits</label>
+        <input type="text" name="credits" id="credits">
+        <label for="creator">Creator</label>
+        <input type="text" name="creator" id="creator">
+        <label for="contentWarning">Content Warning</label>
+        <input type="text" name="contentWarning" id="contentWarning">
+        <label for="contributors">Contributors</label>
+        <input type="text" name="contributors" id="contributors">
+        <button type="submit" id="search-videos">Search</button>
+      </form>
+    </div>
+    <div>
+      <video src="./media/18536c421363f4e94d4e7f352a9c07e9"></video>
+    </div>
+    <div></div>
+  </body>
+</html>
