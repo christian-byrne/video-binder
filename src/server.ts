@@ -213,6 +213,7 @@ class App {
             for (const [field, value] of Object.entries(req.body)) {
               if (vid[field] && !vid[field].includes(value)) {
                 match = false;
+                break
               }
               if (match) {
                 return vid;
