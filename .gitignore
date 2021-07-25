@@ -1,0 +1,3 @@
+public_html/media/*
+public_html/img/*
+**/**/**/.[mp4,flv,mp3,jpg,jpeg,mkv]
